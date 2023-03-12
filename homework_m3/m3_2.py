@@ -1,15 +1,15 @@
 from random import randint
 
 # m3_2 level 1
-# list = [1, 4, 1, 6, "hello", "a", 5, "hello"]
-# dup = [x for i, x in enumerate(list) if i != list.index(x)]
+list = [1, 4, 1, 6, "hello", "a", 5, "hello"]
+dup = [x for i, x in enumerate(list) if i != list.index(x)]
 
-# m = []
-# for i, x in enumerate(list):
-#     if i != list.index(x):
-#         m.append(x)
+m = []
+for i, x in enumerate(list):
+    if i != list.index(x):
+        m.append(x)
 
-# print(list, dup, m, end="\n")
+print(list, dup, m, end="\n")
 
 # m3_2 level 2
 n = 5
@@ -27,3 +27,17 @@ list_index_max = [(i, j) for i in range(len(m))
 line, column = list_index_max[0]
 print('Максимальный элемент =', max_elem)
 print('Строка =', line, 'Столбец =', column)
+
+# m3_2 level 3
+d = {'Num1': 100,
+     'Num2': 181,
+     'Num3': 163,
+     'Num4': 188,
+     'Num5': 171}
+
+
+def invert(d):
+    return {v: k for k, v in d.items()}
+
+
+print(invert(d))
