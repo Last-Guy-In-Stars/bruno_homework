@@ -7,8 +7,6 @@ for i, x in enumerate(list):
     if i != list.index(x):
         m.append(x)
 
-print(list, end="\n")
-print(dup)
-print(m)
+print(list, dup, m, end="\n")
 
 # m3_2 level 1
